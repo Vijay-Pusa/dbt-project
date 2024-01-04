@@ -4,8 +4,8 @@ models:
   - name: customers
     description: One record per customer
     config:
-      alias: customers_root
-    #   tags: Finance
+      alias: 'customers_root'
+      tags: Finance
     columns:
       - name: customer_id
         description: Primary key

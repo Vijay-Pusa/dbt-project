@@ -2,7 +2,7 @@
 
     {%- if custom_alias_name -%}
 
-        {{ custom_alias_name | trim }}
+        {{node.config.tags[0]}}_{{ custom_alias_name | trim }}
 
     {%- elif node.version -%}
 
@@ -15,3 +15,5 @@
     {%- endif -%}
 
 {%- endmacro %}
+
+
